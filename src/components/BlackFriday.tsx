@@ -5,16 +5,18 @@ import Elite from "../images/Elite.png";
 import { Typography, styled } from "@mui/material";
 import logo2 from "../images/logo2.jpg";
 import { Container, fontFamily } from "@mui/system";
+//import CyberMonday from "../images/CyberMonday.jpg";
+import CyberMonday from "../images/Adpic1.jpg";
 
 const StyledImg = styled("img")({
-  width: "600px",
-  height: "600px",
+  width: "1200px",
+  height: "700px",
 });
 
 const StyledImgContainer = styled(Container)({
   display: "flex",
   position: "relative",
-  top: "100px",
+  top: "160px",
   left: "-40px",
   width: "1200px",
 
@@ -29,8 +31,7 @@ const BlackFriday: React.FC = () => {
       <StyledImgContainer>
         <Container>
           <Container style={{ display: "flex" }}>
-            <StyledImg src={Elite} />
-            <StyledImg src={logo2} />
+            <StyledImg src={CyberMonday} />
           </Container>
           <Container
             style={{
@@ -39,7 +40,7 @@ const BlackFriday: React.FC = () => {
               columnGap: "200px",
               marginLeft: "25px",
               width: "1200px",
-              backgroundColor: "#78FFD6",
+              // backgroundColor: "#78FFD6",
               color: "#023C40",
               fontStyle: "bold",
             }}
@@ -54,11 +55,11 @@ const BlackFriday: React.FC = () => {
             </Typography>
             <Typography variant="h5" style={{ fontFamily: "cursive" }}>
               {" "}
-              GET 20% OFF ON SELECT PRODUCTS{" "}
+              GET 20% OFF ON SELECT GAMES{" "}
             </Typography>
             <Typography variant="h5" style={{ fontFamily: "cursive" }}>
               {" "}
-              GET 15% OFF ON SELECT PRODUCTS{" "}
+              GET 15% OFF ON SELECT lAPTOPS/PC{" "}
             </Typography>
             <Typography variant="h5" style={{ fontFamily: "cursive" }}>
               {" "}

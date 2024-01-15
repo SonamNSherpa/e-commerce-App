@@ -5,9 +5,9 @@ import LoginIcon from "@mui/icons-material/Login";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCart from "@mui/icons-material/ShoppingCartOutlined";
-import CompanyLogo from "./shared/CompanyLogo";
+import CompanyLogo from "./CompanyLogo";
 import { Container } from "@mui/system";
-import Header from "./shared/Header";
+import Header from "./Header";
 
 const StyledNavbar = styled("nav")({
   position: "absolute",
@@ -54,6 +54,33 @@ const Navbar: React.FC = () => {
       <CompanyLogo />
       <StyledNavbar>
         <ul>
+          <StyledListItem>
+            <StyledLink
+              to="/Laptops"
+              style={{ color: location.pathname === "/" ? "red" : "white" }}
+            >
+              Laptops
+            </StyledLink>
+          </StyledListItem>
+
+          <StyledListItem>
+            <StyledLink
+              to="/Softwares"
+              style={{ color: location.pathname === "/" ? "red" : "white" }}
+            >
+              Gaming And Learning
+            </StyledLink>
+          </StyledListItem>
+
+          <StyledListItem>
+            <StyledLink
+              to="/Registration"
+              style={{ color: location.pathname === "/" ? "red" : "white" }}
+            >
+              Create An Elite Account
+            </StyledLink>
+          </StyledListItem>
+
           <StyledListItem>
             <StyledLink
               to="/"
